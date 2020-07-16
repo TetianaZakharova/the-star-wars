@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  margin: 34px;
+  // background: center / contain no-repeat url("./StarWars.png");
+}
+
+.homePage {
+  height: 500px;
+  background: center / contain no-repeat url("./StarWars.png");
+
+  &__loadFilmsButton {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      display: flex;
+      width: 150px;
+      height: 70px;
+      background-color: #202020;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      transition: background-color 0.5s;
+      
+    &:hover {
+        background-color: #43c9f3;
+    }
+  
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    color: #ffed25;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 65px;
+    transition: color 0.5s;
+    &:hover {
+        color:  #d00a02;
+    }
+  }
+}

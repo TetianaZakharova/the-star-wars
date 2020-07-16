@@ -1,0 +1,39 @@
+.details {
+  width: 60%;
+  background-color: #202020;
+  padding: 16px;
+  border: 1px solid #202020;
+  border-radius: 8px;
+  margin: 16px auto;
+
+  &__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+  &__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #FFFFFF;
+  }
+
+  &__item {
+    font-size: 18px;
+    font-weight: bold;
+
+    &--planet {
+      color: #d00a02;
+    }
+
+    &--starship {
+      color: #43c9f3;
+    }
+  }
+}
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+}

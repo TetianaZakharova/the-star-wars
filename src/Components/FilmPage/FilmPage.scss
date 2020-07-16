@@ -1,0 +1,93 @@
+
+.filmPage{
+  &__control{
+    display: flex;
+  }
+
+  &__sortButton {
+    width: 128px;
+    height: 40px;
+    border: 1px solid #ffed25;
+    border-radius: 8px;
+    outline: none;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #202020;
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 16px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #43c9f3;
+    transition: background-color 0.5s;
+
+    &:hover {
+        background-color: #d00a02;
+        cursor: pointer;
+    }
+  }
+} 
+
+.form__control{
+    width: 60%;
+    height: 32px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    outline: none;
+    margin: 0 auto;
+    padding: 8px;
+} 
+
+
+.films__list {
+  // list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 16px;
+  text-align: center;
+  padding: 0;
+
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  &__item {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 20px;
+    background-color: #202020;
+    padding: 16px;
+    transition: transform 0.5s;
+    color: #FFFFFF;
+    
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.item {
+  &__info {
+    color: grey;
+
+    &--description {
+      font-size: 18px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__episode {
+      color: #ffed25;
+  }
+
+  &__title {
+      color: #FFFFFF;
+  }
+} 
